@@ -157,6 +157,6 @@ export default class RPSSigner implements IRpsSigner {
       console.log("Assinatura gerada (Base64):", signatureBase64);
     }
 
-    rps.Assinatura = signatureBase64 + "aaaaaaa";
+    rps.Assinatura = signatureBase64;
   }
 }
