@@ -64,7 +64,7 @@ export default class RPSSigner {
         if (this.config.debug) {
             console.log("Assinatura gerada (Base64):", signatureBase64);
         }
-        rps.Assinatura = signatureBase64 + "aaaaaaa";
+        rps.Assinatura = signatureBase64;
     }
 }
 //# sourceMappingURL=RPSSigner.js.map
