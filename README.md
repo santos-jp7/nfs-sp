@@ -2,7 +2,6 @@
 
 ![NPM](https://img.shields.io/npm/v/nfs-sp)
 ![license](https://img.shields.io/npm/l/nfs-sp)
-![Build](https://img.shields.io/github/actions/workflow/status/your-github-username/nfs-sp/main.yml)
 
 > **⚠️ Atenção:** Este projeto está em fase inicial de desenvolvimento e testes. Use com cautela em produção.
 
