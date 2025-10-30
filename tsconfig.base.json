@@ -1,0 +1,46 @@
+{
+    // tsconfig.base.json - configurações comuns reutilizáveis
+    "compilerOptions": {
+        // Alvo e módulos
+        "target": "ES2020",                      // versão do JS gerado
+        "module": "ESNext",                      // formato de módulos emitidos
+        "lib": ["ES2020", "DOM"],                // libs padrão disponíveis
+
+        // Resolução e entradas/saídas
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "rootDir": "./src",
+        "outDir": "./dist",
+
+        // Segurança / qualidade
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+
+        // Interop / compatibilidade
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+
+        // Maps / sourcemaps / declarações
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+
+        // Performance
+        "incremental": true,
+        "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
+
+        // Paths (ajuste conforme monorepo/alias)
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+
+    // Arquivos incluídos/excluídos
+    "include": ["src"],
+    "exclude": ["node_modules", "dist", "build", "**/*.spec.ts", "**/*.test.ts"]
+}

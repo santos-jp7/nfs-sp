@@ -1,0 +1,1 @@
+{"version":3,"file":"ISpNfeService.d.ts","sourceRoot":"","sources":["../../../../src/core/interfaces/ISpNfeService.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAC;AAElD,MAAM,WAAW,aAAa;IAC5B,MAAM,EAAE,cAAc,CAAC;IAEvB,aAAa,CAAC,GAAG,EAAE,MAAM,GAAG,OAAO,CAAC,GAAG,CAAC,CAAC;CAC1C"}

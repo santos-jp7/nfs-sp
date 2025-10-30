@@ -1,0 +1,49 @@
+{
+    // tsconfig.base.json - configurações comuns reutilizáveis
+    "compilerOptions": {
+        // Alvo e módulos
+        "target": "ES2021", // Ajustado para ES2021 aqui também, para maior clareza
+        "module": "ESNext",
+        "lib": ["ES2021", "DOM"],
+
+        // Resolução e entradas/saídas
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "rootDir": "./src",
+        // "outDir": "./dist", // ⬅️ REMOVIDO/COMENTADO! A saída JS fica nos arquivos específicos (cjs/esm)
+
+        // 🎯 GERAÇÃO DE TIPOS
+        "declaration": true, 
+        "declarationMap": true,
+        "declarationDir": "./dist/types", // ⬅️ NOVO: Arquivos .d.ts serão salvos aqui.
+
+        // Segurança / qualidade
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+
+        // Interop / compatibilidade
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+
+        // Maps / sourcemaps
+        "sourceMap": true,
+
+        // Performance
+        "incremental": true,
+        "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
+
+        // Paths 
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+
+    // Arquivos incluídos/excluídos
+    "include": ["src"],
+    "exclude": ["node_modules", "dist", "build", "**/*.spec.ts", "**/*.test.ts"]
+}
